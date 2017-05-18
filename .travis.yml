@@ -4,6 +4,8 @@ node_js:
 script:
   - echo "Deploying to Firebase Hosting Martin!"
 install:
+  - npm install -g @angular/cli
   - npm install -g firebase-tools
 after_success:
+  - ng build
   - firebase deploy --token $FIREBASE_TOKEN
