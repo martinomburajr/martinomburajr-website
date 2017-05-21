@@ -1,0 +1,42 @@
+  <div class="animated fadeIn">
+    <div class="card">
+      <head>
+        <div class="card-header justify-content-center">
+          {{title}}
+        </div>
+      </head>
+      <body>
+        <!--<div id="wrapper">-->
+          <div id="bg2"></div>
+          <div id="overlay-bio"></div>
+            <!--<div id="main">-->
+              <div class="card">
+                <div class="card-header">
+                    <span class="display-6">
+                      {{(bio$ | async)?.Title}}
+                    </span>
+                </div>
+                <div class="card-block">
+                    {{(bio$ | async)?.Body}}
+                </div>
+                <div class="card-footer">
+                  <span class="float-left">
+                    Views: {{(bio$ | async)?.Views}}
+                  </span>
+                  <span class="float-right">
+                    Updated: {{(bio$ | async)?.UpdatedDate | date:'medium'}}
+                  </span>
+                </div>
+              </div>
+
+              <div class="card float-left">
+                  <button class="btn btn-success" (click)="onCVClick()">
+                    <i class="fa fa-file-pdf-o fa-3x"></i>
+                  </button>
+                  <img url='downloadURL'>
+              </div>              
+            <!--</div>-->
+        <!--</div>-->
+      </body>
+  </div>
+</div>

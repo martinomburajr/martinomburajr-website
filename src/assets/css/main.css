@@ -128,14 +128,14 @@
 	/* Set your background with this */
 
 		background: rgba(52,140,178,0.3) url("/assets/css/images/bg2-min.jpg") bottom left;
-		background-repeat: repeat-x;
+		/*background-repeat: repeat-x;*/
 		height: 100%;
 		left: 0;
 		opacity: 1;
 		position: fixed;
 		top: 0;
 	}	
-
+/*
 @-moz-keyframes wrapper {
 		0% {
 			opacity: 0;
@@ -190,7 +190,7 @@
 			-ms-transform: translate3d(-2250px,0,0);
 			transform: translate3d(-2250px,0,0);
 		}
-	}
+	}*/
 
 	#wrapper {
 		display: -moz-flex;
@@ -230,7 +230,7 @@
 
 	/* Overlay */
 
-	@-moz-keyframes overlay {
+	/*@-moz-keyframes overlay {
 		0% {
 			opacity: 0;
 		}
@@ -268,7 +268,7 @@
 		100% {
 			opacity: 1;
 		}
-	}
+	}*/
 
 	#overlay {
 		-moz-animation: overlay 1.5s 1.5s forwards;
@@ -289,7 +289,7 @@
 	}
 
 
-		#main {
+	#main {
 		height: 100%;
 		left: 0;
 		position: fixed;
@@ -387,15 +387,15 @@
 			display: block;
 		}
 
-		.image.left, .image.right {
+		/*.image.left, .image.right {
 			max-width: 40%;
 		}
 
 			.image.left img, .image.right img {
 				width: 100%;
-			}
+			}*/
 
-		.image.left {
+		/*.image.left {
 			float: left;
 			padding: 0 1.5em 1em 0;
 			top: 0.25em;
@@ -405,9 +405,9 @@
 			float: right;
 			padding: 0 0 1em 1.5em;
 			top: 0.25em;
-		}
+		}*/
 
-		.image.fit {
+		/*.image.fit {
 			display: block;
 			margin: 0 0 2rem 0;
 			width: 100%;
@@ -425,11 +425,12 @@
 
 			.image.main img {
 				width: 100%;
-			}
+			}*/
 
 		/* Header */
 
-				#header nav ul {
+		/* This Displays the box  around the social media icons*/
+		#header nav ul {
 			display: -moz-flex;
 			display: -webkit-flex;
 			display: -ms-flex;
@@ -442,7 +443,7 @@
 		}
 
 
-	@-moz-keyframes header {
+	/*@-moz-keyframes header {
 		0% {
 			-moz-transform: translate3d(0,1em,0);
 			-webkit-transform: translate3d(0,1em,0);
@@ -567,7 +568,7 @@
 			opacity: 1;
 		}
 	}
-
+*/
 
 /* Icon */
 
@@ -624,7 +625,7 @@
 		cursor: default;
 		display: inline-block;
 		opacity: 0.91;
-		position: relative;
+		/*position: relative;*/
 		text-align: center;
 		top: -1em;
 		vertical-align: middle;
@@ -759,7 +760,7 @@
 					font-size: 1.75em;
 					height: 2.5em;
 					line-height: 2.5em;
-					position: relative;
+					/*position: relative;*/
 					text-align: center;
 					top: 0;
 					width: 2.5em;
@@ -811,13 +812,10 @@
 
 	@media screen and (max-width: 1680px) {
 
-		/* Basic */
-
+		
 			body, input, select, textarea {
 				font-size: 13pt;
 			}
-
-		/* BG */
 
 			@-moz-keyframes bg {
 				0% {
@@ -890,16 +888,12 @@
 		} }
 
 		/* Normal */
-
+/*
 	@media screen and (max-width: 1280px) {
-
-		/* Basic */
 
 			body, input, select, textarea {
 				font-size: 12pt;
 			}
-
-		/* BG */
 
 			@-moz-keyframes bg {
 				0% {
@@ -969,13 +963,11 @@
 		#bg {
 			background-size: 750px auto;
 			width: 2250px;
-		} }
+		} }*/
 
 /* Mobile */
-
+/*
 	@media screen and (max-width: 736px) {
-
-		/* Basic */
 
 			body {
 				min-width: 320px;
@@ -984,8 +976,6 @@
 			body, input, select, textarea {
 				font-size: 11pt;
 			}
-
-		/* BG */
 
 			@-moz-keyframes bg {
 				0% {
@@ -1057,7 +1047,6 @@
 			width: 900px;
 		}
 
-	/* Header */
 
 		#header h1 {
 			font-size: 2.5em;
@@ -1079,11 +1068,14 @@
 				font-size: 1em;
 			} }
 
+*/
+			
+
 /* Mobile (Portrait) */
 
-	@media screen and (max-width: 480px) {
+	/*@media screen and (max-width: 480px) {
 
-		/* BG */
+
 
 			@-moz-keyframes bg {
 				0% {
@@ -1155,12 +1147,11 @@
 			width: 1237.5px;
 		}
 
-	/* Header */
 
 		#header nav {
 			padding: 0 1em;
 		} 
-		}
+		}*/
 
 	body, input, select, textarea {
 		color: #ffffff;

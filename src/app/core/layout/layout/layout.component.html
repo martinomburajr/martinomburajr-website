@@ -1,0 +1,38 @@
+<header class="app-header navbar">
+    <!--<button class="navbar-toggler mobile-sidebar-toggler" type="button">&#9776;</button>-->
+    <a class="nav-link" routerLinkActive="active" [routerLink]="['/home']">Martin Ombura Jr.</a>
+
+    <ul class="nav navbar-nav hidden-md-down">
+        <li class="nav-item px-1">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/home']">Home</a>
+        </li>           
+        <li class="nav-item px-1">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/bio']">Bio</a>
+        </li>
+        <!--<li class="nav-item px-1">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/portfolio']">Portfolio</a>
+        </li>
+        <li class="nav-item px-1">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/hobbies']">Hobbies</a>
+        </li>	
+		    <li class="nav-item px-1">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/experimental']">Experimental</a>
+        </li>			-->
+    </ul>     
+</header>
+
+<div class="app-body justify-content-center">
+    <!-- Main content -->
+    <main class="main justify-content-center">
+
+        <!-- Breadcrumb -->
+        <ol class="breadcrumb">
+            <breadcrumbs></breadcrumbs>
+        </ol>
+
+        <div class="container-fluid justify-content-center">
+            <router-outlet></router-outlet>
+        </div>
+        <!-- /.conainer-fluid -->
+    </main>
+</div>
