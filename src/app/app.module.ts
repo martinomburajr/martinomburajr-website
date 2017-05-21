@@ -27,4 +27,5 @@ import { environment } from '../environments/environment';
   providers: [GeolocationService, GeolocationRepository],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
