@@ -24,6 +24,7 @@ import { environment } from '../environments/environment';
 @NgModule({
   declarations: [
     AppComponent,
+    // HomeComponent,
     LayoutComponent,
     NAV_DROPDOWN_DIRECTIVES,
     BreadcrumbsComponent,
@@ -35,6 +36,7 @@ import { environment } from '../environments/environment';
     FormsModule,
     HttpModule,
     AppRoutes,
+    HomeModule,
     AngularFireModule.initializeApp(environment.firebase, 'martinomburajr-a1bcd'), // imports firebase/app needed for everything
     AngularFireDatabaseModule, // imports firebase/database, only needed for database features
     AngularFireAuthModule,

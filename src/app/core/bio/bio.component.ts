@@ -43,34 +43,34 @@ export class BioComponent implements OnInit {
   }
 
   onCVClick() {
-    var storage = firebase.storage();
-    let pathReference = storage.ref('CV/Martin Ombura CV (May 2017).pdf');
-    var httpsReference = storage.refFromURL('https://firebasestorage.googleapis.com/v0/b/martinomburajr-a1bcd.appspot.com/o/CV%2FMartin%20Ombura%20CV%20(May%202017).pdf?alt=media&token=18141941-48f3-4e05-bcf9-ec56bf84d73c');
-    // Create a reference to the file we want to download
-var starsRef = pathReference.getDownloadURL().then(function(url) {
-  // Insert url into an <img> tag to "download"
-  this.downloadURL = url;
-}).catch(function(error) {
+    //     var storage = firebase.storage();
+    //     let pathReference = storage.ref('CV/Martin Ombura CV (May 2017).pdf');
+    //     var httpsReference = storage.refFromURL('https://firebasestorage.googleapis.com/v0/b/martinomburajr-a1bcd.appspot.com/o/CV%2FMartin%20Ombura%20CV%20(May%202017).pdf?alt=media&token=18141941-48f3-4e05-bcf9-ec56bf84d73c');
+    //     // Create a reference to the file we want to download
+    // var starsRef = pathReference.getDownloadURL().then(function(url) {
+    //   // Insert url into an <img> tag to "download"
+    //   this.downloadURL = url;
+    // }).catch(function(error) {
 
-  // A full list of error codes is available at
-  // https://firebase.google.com/docs/storage/web/handle-errors
-  switch (error.name) {
-    case 'storage/object_not_found':
-      console.log('File doesnt exist')
-      break;
+    //   // A full list of error codes is available at
+    //   // https://firebase.google.com/docs/storage/web/handle-errors
+    //   switch (error.name) {
+    //     case 'storage/object_not_found':
+    //       console.log('File doesnt exist')
+    //       break;
 
-    case 'storage/unauthorized':
-      console.log('User doesnt have permission to access the object')
-      break;
+    //     case 'storage/unauthorized':
+    //       console.log('User doesnt have permission to access the object')
+    //       break;
 
-    case 'storage/canceled':
-      console.log('User canceled the upload');
-      break;
+    //     case 'storage/canceled':
+    //       console.log('User canceled the upload');
+    //       break;
 
-    case 'storage/unknown':
-      console.log('Unknown error occurred, inspect the server response');
-      break;
-  }
-    });    
+    //     case 'storage/unknown':
+    //       console.log('Unknown error occurred, inspect the server response');
+    //       break;
+    //   }
+    //     });    
   }
 }

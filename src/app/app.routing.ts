@@ -6,20 +6,26 @@ import { LayoutComponent } from './core/layout/layout/layout.component';
 import { NgModule } from '@angular/core';
 
 export const routes: Routes = [
-  { path: '', 
+  { 
+    path: '', 
     redirectTo: 'home',
     pathMatch: 'full',
   },
-  { path: '', 
+  {
+    path: 'home',
+    component: HomeComponent,
+  },
+  { 
+    path: '', 
     component: LayoutComponent, 
     data: {
       title:'Home'
     },
     children: [
-      {
-        path: 'home',
-        loadChildren: './core/home/home.module#HomeModule'
-      },
+      // {
+      //   path: 'home',
+      //   loadChildren: './core/home/home.module#HomeModule'
+      // },
       {
         path: 'bio',
         loadChildren: './core/bio/bio.module#BioModule'
