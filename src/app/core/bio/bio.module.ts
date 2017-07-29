@@ -6,6 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { MapsComponent } from "app/core/maps/maps.component";
 
 @NgModule({
   imports: [

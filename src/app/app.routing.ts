@@ -29,7 +29,11 @@ export const routes: Routes = [
       {
         path: 'bio',
         loadChildren: './core/bio/bio.module#BioModule'
-      }
+      },
+      {
+        path: 'maps',
+        loadChildren: './core/maps/maps.module#MapsModule'
+      },
       // {
       //   path: 'portfolio',
       //   loadChildren: './core/portfolio/portfolio.module#PortfolioModule'

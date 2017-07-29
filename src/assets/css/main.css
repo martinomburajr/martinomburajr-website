@@ -127,13 +127,20 @@
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
-		background: rgba(52,140,178,0.3) url("/assets/css/images/bg2-min.jpg") bottom left;
+		background: rgba(52,140,178,0.3) url("/assets/css/images/bg2-min.jpg") no-repeat center center fixed;
+
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
 		/*background-repeat: repeat-x;*/
 		height: 100%;
 		left: 0;
 		opacity: 1;
 		position: fixed;
 		top: 0;
+		min-width: 100%;
+		min-height: 100%;
 	}	
 /*
 @-moz-keyframes wrapper {
