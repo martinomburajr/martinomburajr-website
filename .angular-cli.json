@@ -20,10 +20,12 @@
       "prefix": "app",
       "styles": [
         "scss/style.scss",
-        "assets/css/main.css",
-        "assets/css/font-awesome.min.css"
+        "../node_modules/clarity-ui/clarity-ui.min.css",
+        "../node_modules/clarity-icons/clarity-icons.min.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/clarity-icons/clarity-icons.min.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

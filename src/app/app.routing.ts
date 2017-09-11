@@ -1,3 +1,4 @@
+import { BioComponent } from './core/bio/bio.component';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -6,20 +7,20 @@ import { LayoutComponent } from './core/layout/layout/layout.component';
 import { NgModule } from '@angular/core';
 
 export const routes: Routes = [
-  { 
-    path: '', 
-    redirectTo: 'home',
-    pathMatch: 'full',
-  },
-  {
-    path: 'home',
-    component: HomeComponent,
-  },
+  // { 
+  //   path: '', 
+  //   redirectTo: 'bio',
+  //   pathMatch: 'full',
+  // },
+  // {
+  //   path: 'bio',
+  //   component: BioComponent,
+  // },
   { 
     path: '', 
     component: LayoutComponent, 
     data: {
-      title:'Home'
+      title:'Bio'
     },
     children: [
       // {

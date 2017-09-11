@@ -19,7 +19,9 @@ export class BioComponent implements OnInit {
   private bio$: Observable<BioEntity>
   private title: string;
   private downloadURL: string;
+  private isLoading: boolean;
   constructor(private bS: BioService, private afDb: AngularFireDatabase, private afAuth: AngularFireAuth) { 
+    this.isLoading = true;
     this.bio$ = new Observable<BioEntity>(x=>x);
     this.title = 'Bio'
   }
@@ -28,11 +30,7 @@ export class BioComponent implements OnInit {
     let b = this.retrieveBio()
     this.bio$ = this.loadBio(b);
     this.bio$.subscribe(x => {
-      let newBio = x;
-      newBio.Views = x.Views + 1;
-      this.bS.update(x.Id,newBio).then(r => {
-        console.log("added viewcount");
-      })
+      this.isLoading = false;
     })
   }
 

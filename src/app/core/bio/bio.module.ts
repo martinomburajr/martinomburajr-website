@@ -1,3 +1,5 @@
+import { ClarityModule } from 'clarity-angular';
+import { VerticalNavIconService } from 'clarity-angular/src/layout/vertical-nav/providers/vertical-nav-icon.service';
 import { BioComponent } from './bio.component';
 import { BioRepository } from '../../api/bio/repository/bio.repository';
 import { BioRoutingModule } from './bio.routing';
@@ -11,9 +13,10 @@ import { MapsComponent } from "app/core/maps/maps.component";
 @NgModule({
   imports: [
     CommonModule,
+    ClarityModule.forChild(),
     BioRoutingModule
   ],
   declarations: [BioComponent],
-  providers:[BioService, BioRepository]
+  providers:[BioService, BioRepository, VerticalNavIconService]
 })
 export class BioModule { }

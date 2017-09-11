@@ -1,24 +1,11 @@
 #bg2 {
-    -moz-animation: bg 60s linear infinite;
-		-webkit-animation: bg 60s linear infinite;
-		-ms-animation: bg 60s linear infinite;
-		animation: bg 60s linear infinite;
-		-moz-backface-visibility: hidden;
-		-webkit-backface-visibility: hidden;
-		-ms-backface-visibility: hidden;
-		backface-visibility: hidden;
-		-moz-transform: translate3d(0,0,0);
-		-webkit-transform: translate3d(0,0,0);
-		-ms-transform: translate3d(0,0,0);
-		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
 		background: rgba(52,140,178,0.3) url("/../../../assets/css/images/bg.jpg") bottom left;
 		/*background-repeat: repeat-x;*/
 		height: 100%;
 		left: 0;
-		opacity: 1;
-		position: fixed;
+		opacity: 0.7;
 		top: 0;
 }
 
