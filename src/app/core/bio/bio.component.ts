@@ -27,6 +27,13 @@ export class BioComponent implements OnInit {
   ngOnInit() {
     let b = this.retrieveBio()
     this.bio$ = this.loadBio(b);
+    this.bio$.subscribe(x => {
+      let newBio = x;
+      newBio.Views = x.Views + 1;
+      this.bS.update(x.Id,newBio).then(r => {
+        console.log("added viewcount");
+      })
+    })
   }
 
   retrieveBio(): Observable<BioEntity[]> {
@@ -34,7 +41,6 @@ export class BioComponent implements OnInit {
     query.query = {};
     query.query.orderByKey = true;
     query.query.limitToFirst = 1;
-    console.log(query);
     return this.bS.retrieveAllAsEntityWithQuery(query);
   }
 

@@ -13,8 +13,7 @@ import { MapsComponent } from "app/core/maps/maps.component";
     CommonModule,
     BioRoutingModule
   ],
-  declarations: [BioComponent
-],
+  declarations: [BioComponent],
   providers:[BioService, BioRepository]
 })
 export class BioModule { }

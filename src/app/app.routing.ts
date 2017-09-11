@@ -34,10 +34,22 @@ export const routes: Routes = [
         path: 'maps',
         loadChildren: './core/maps/maps.module#MapsModule'
       },
-      // {
-      //   path: 'portfolio',
-      //   loadChildren: './core/portfolio/portfolio.module#PortfolioModule'
-      // },
+      {
+        path: 'portfolio',
+        loadChildren: './core/portfolio/portfolio.module#PortfolioModule'
+      },
+      {
+        path: 'music',
+        loadChildren: './core/music/music.module#MusicModule'
+      },
+      {
+        path: 'articles',
+        loadChildren: './core/articles/articles.module#ArticlesModule'
+      },
+      {
+        path: 'contact',
+        loadChildren: './core/contact/contact.module#ContactModule'
+      },
       // {
       //   path: 'hobbies',
       //   loadChildren: './core/hobbies/hobby.module#HobbyModule'

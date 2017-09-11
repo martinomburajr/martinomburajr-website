@@ -1,14 +1,14 @@
   <div class="animated fadeIn">
-    <div class="card">
-      <head>
+    <!-- <div class="card"> -->
+      <!-- <head>
         <div class="card-header justify-content-center">
           {{title}}
         </div>
-      </head>
-      <body>
+      </head> -->
+      <body style="background-image: url(./../../../assets/css/images/overlay.png)">
         <!--<div id="wrapper">-->
-          <div id="bg2"></div>
-          <div id="overlay-bio"></div>
+        <!-- <div id="bg2"></div> -->
+          <!-- <div id="overlay-bio"></div> -->
             <!--<div id="main">-->
               <div class="card">
                 <div class="card-header">
@@ -29,14 +29,19 @@
                 </div>
               </div>
 
-              <div class="card float-left">
-                  <a href="./../../../assets/other/martinombura-cv-july-2017.pdf" class="btn btn-success" (click)="onCVClick()" download>
-                    <i class="fa fa-file-pdf-o fa-3x"></i>
-                  </a>
-                  <img url='downloadURL'>
-              </div>              
+              <div class="card">
+                  <div class="card-header display-6 justify-content-center">
+                    My CV
+                  </div>
+                  <div>
+                    <a href="./../../../assets/other/martinombura-cv.pdf" class="btn btn-success btn-lg btn-block justify-content-center" (click)="onCVClick()" download>
+                      <i class="fa fa-file-pdf-o fa-3x"></i>
+                    </a>
+                    <img url='downloadURL'>
+                  </div>
+              </div>             
             <!--</div>-->
         <!--</div>-->
       </body>
-  </div>
+  <!-- </div> -->
 </div>
