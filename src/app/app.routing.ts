@@ -32,6 +32,22 @@ export const routes: Routes = [
         loadChildren: './core/bio/bio.module#BioModule'
       },
       {
+        path: 'bio/education',
+        loadChildren: './core/bio/subcomponents/education/education.module#EducationModule'
+      },
+      {
+        path: 'bio/education/tertiary',
+        loadChildren: './core/bio/subcomponents/education/tertiary-education/tertiary-education.module#TertiaryEducationModule'
+      },
+      {
+        path: 'bio/education/secondary',
+        loadChildren: './core/bio/subcomponents/education/secondary-education/secondary-education.module#SecondaryEducationModule'
+      },
+      // {
+      //   path: 'bio/education/secondary-education',
+      //   loadChildren: './core/bio/subcomponent/education/secondary-education.module#SecondaryEducationModule'
+      // },
+      {
         path: 'maps',
         loadChildren: './core/maps/maps.module#MapsModule'
       },

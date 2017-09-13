@@ -1,3 +1,4 @@
+import { VerticalNavIconService } from 'clarity-angular/layout/vertical-nav/providers/vertical-nav-icon.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ClarityModule } from 'clarity-angular';
 import { AngularFireAuthModule } from 'angularfire2/auth';
@@ -48,7 +49,7 @@ import { environment } from '../environments/environment';
     AngularFireAuthModule,
     NgbModule.forRoot(),
   ],
-  providers: [GeolocationService, GeolocationRepository],
+  providers: [GeolocationService, GeolocationRepository, VerticalNavIconService],
   bootstrap: [AppComponent]
 })
 

@@ -3,18 +3,46 @@
         <div class="content-area">
             <router-outlet></router-outlet>
         </div>
-        <clr-vertical-nav [clrVerticalNavCollapsible]="collapsible" [(clrVerticalNavCollapsed)]="collapsed">
+        <clr-vertical-nav [clrVerticalNavCollapsible]="true" [(clrVerticalNavCollapsed)]="collapsed">
         <clr-vertical-nav-group routerLinkActive="active">
-                <clr-icon shape="compass" clrVerticalNavIcon></clr-icon>
-                Home
+                <a clrVerticalNavLink
+                [routerLink]="['/bio']"
+                    routerLinkActive="active">
+                    <clr-icon shape="user" clrVerticalNavIcon></clr-icon>
+                    Bio
+                </a>
                 <clr-vertical-nav-group-children *clrIfExpanded="true">
                     <a clrVerticalNavLink
-                    [routerLink]="['/bio']"
+                    [routerLink]="['/bio/education']"
                         routerLinkActive="active">
-                        <clr-icon shape="user" clrVerticalNavIcon></clr-icon>
-                        Bio
+                        <clr-icon shape="lightbulb" clrVerticalNavIcon></clr-icon>
+                        Education
                     </a>
+                    <!-- <clr-vertical-nav-group-children *clrIfExpanded="true">
+                            <a clrVerticalNavLink
+                            [routerLink]="['/bio/education/tertiary']"
+                                routerLinkActive="active">
+                                <clr-icon shape="world" clrVerticalNavIcon></clr-icon>
+                                Tertiary
+                            </a>
+                        </clr-vertical-nav-group-children>
+                    <clr-vertical-nav-group-children *clrIfExpanded="true">
+                            <a clrVerticalNavLink
+                            [routerLink]="['/bio/education/secondary']"
+                                routerLinkActive="active">
+                                <clr-icon shape="book" clrVerticalNavIcon></clr-icon>
+                                Secondary
+                            </a>
+                    </clr-vertical-nav-group-children> -->
                 </clr-vertical-nav-group-children>
+                <!-- <clr-vertical-nav-group-children *clrIfExpanded="true">
+                    <a clrVerticalNavLink
+                    [routerLink]="['/bio/work-experience']"
+                        routerLinkActive="active">
+                        <clr-icon shape="clipboard" clrVerticalNavIcon></clr-icon>
+                        Work Experience
+                    </a>
+                </clr-vertical-nav-group-children> -->
             </clr-vertical-nav-group>
             <a clrVerticalNavLink routerLinkActive="active" [routerLink]="['/portfolio']">
                 <clr-icon shape="folder" clrVerticalNavIcon></clr-icon>
@@ -53,7 +81,14 @@
 
 
 <footer class="app-footer">
-    <a href="https://scarlaria.com">@martinomburajr</a>
-    <span class="float-right">Powered by <a href="https://scarlaria.com">Scarlaria</a>
-    </span>
+    <div class="row w-100">
+        <!-- <div class="float-left">
+                <a href="https://scarlaria.com">@martinomburajr</a>
+        </div> -->
+        <div class="float-right">
+            <img src="../../../../assets/images/angular-icon.png" height="30px">
+            <img src="../../../../assets/images/typescript-icon.png" height="30px">
+            <img src="../../../../assets/images/firebase-icon.png" height="30px">
+        </div>
+    </div>
 </footer>
