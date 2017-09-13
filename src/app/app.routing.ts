@@ -7,11 +7,11 @@ import { LayoutComponent } from './core/layout/layout/layout.component';
 import { NgModule } from '@angular/core';
 
 export const routes: Routes = [
-  // { 
-  //   path: '', 
-  //   redirectTo: 'bio',
-  //   pathMatch: 'full',
-  // },
+  { 
+    path: '', 
+    redirectTo: 'bio',
+    pathMatch: 'full',
+  },
   // {
   //   path: 'bio',
   //   component: BioComponent,
