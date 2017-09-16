@@ -35,19 +35,47 @@
                             </a>
                     </clr-vertical-nav-group-children> -->
                 </clr-vertical-nav-group-children>
-                <!-- <clr-vertical-nav-group-children *clrIfExpanded="true">
+                <clr-vertical-nav-group-children *clrIfExpanded="true">
                     <a clrVerticalNavLink
                     [routerLink]="['/bio/work-experience']"
                         routerLinkActive="active">
                         <clr-icon shape="clipboard" clrVerticalNavIcon></clr-icon>
                         Work Experience
                     </a>
-                </clr-vertical-nav-group-children> -->
+                </clr-vertical-nav-group-children>
             </clr-vertical-nav-group>
-            <a clrVerticalNavLink routerLinkActive="active" [routerLink]="['/portfolio']">
-                <clr-icon shape="folder" clrVerticalNavIcon></clr-icon>
+            <clr-vertical-nav-group routerLinkActive="active">
+                <a clrVerticalNavLink
+                [routerLink]="['/portfolio']"
+                    routerLinkActive="active">
+                    <clr-icon shape="folder" clrVerticalNavIcon></clr-icon>
                     Portfolio
                 </a>
+                <clr-vertical-nav-group-children *clrIfExpanded="true">
+                    <a clrVerticalNavLink
+                    [routerLink]="['/portfolio/tycho']"
+                       routerLinkActive="active">
+                       <clr-icon shape="flame" clrVerticalNavIcon></clr-icon>
+                        Project Tycho
+                    </a>
+                </clr-vertical-nav-group-children>
+                <clr-vertical-nav-group-children *clrIfExpanded="true">
+                    <a clrVerticalNavLink
+                    [routerLink]="['/portfolio/logos']"
+                       routerLinkActive="active">
+                       <clr-icon shape="clipboard" clrVerticalNavIcon></clr-icon>
+                        Project Logos
+                    </a>
+                </clr-vertical-nav-group-children>
+                <!-- <clr-vertical-nav-group-children *clrIfExpanded="true">
+                    <a clrVerticalNavLink
+                    [routerLink]="['/portfolio/assembly']"
+                       routerLinkActive="active">
+                       <clr- icon shape="clipboard" clrVerticalNavIcon></clr-icon>
+                        Assembler
+                    </a>
+                </clr-vertical-nav-group-children> -->
+            </clr-vertical-nav-group>
             <clr-vertical-nav-group routerLinkActive="active">
                 <clr-icon shape="compass" clrVerticalNavIcon></clr-icon>
                 Hobbies
@@ -70,10 +98,13 @@
                 <clr-icon shape="chat-bubble" clrVerticalNavIcon></clr-icon>
                 Contact
             </a>
-            <a clrVerticalNavLink routerLinkActive="active" href="./../../../assets/other/martinombura-cv.pdf" class="bottom-left btn-warning">
+            <a clrVerticalNavLink routerLinkActive="active" href="./../../../assets/other/martinombura-cv.pdf" class="bottom-left btn-primary">
                 <clr-icon shape="download" clrVerticalNavIcon></clr-icon>
-                Download CV
-                <clr-icon shape="certificate" clrVerticalNavIcon></clr-icon>
+                CV/Resume
+            </a>
+            <a clrVerticalNavLink routerLinkActive="active" href="./../../../assets/other/recommendations.zip" class="bottom-left btn-warning">
+                <clr-icon shape="download" clrVerticalNavIcon></clr-icon>
+                Recommendation Letters
             </a>
          </clr-vertical-nav>
     </div>

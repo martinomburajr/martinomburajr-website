@@ -43,6 +43,10 @@ export const routes: Routes = [
         path: 'bio/education/secondary',
         loadChildren: './core/bio/subcomponents/education/secondary-education/secondary-education.module#SecondaryEducationModule'
       },
+      {
+        path: 'bio/work-experience',
+        loadChildren: './core/bio/subcomponents/work-experience/work-experience.module#WorkExperienceModule'
+      },
       // {
       //   path: 'bio/education/secondary-education',
       //   loadChildren: './core/bio/subcomponent/education/secondary-education.module#SecondaryEducationModule'
