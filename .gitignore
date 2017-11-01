@@ -5,12 +5,12 @@
 /out-tsc
 
 # dependencies
-/node_modules
+/node_moduless
 /functions
 
 # IDEs and editors
 /.idea
-.project
+.project 
 .classpath
 .c9/
 *.launch
